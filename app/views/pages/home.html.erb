@@ -1,2 +1,12 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+  <h1>Twilio Demo</h1>
+
+  <% if user_signed_in? %>
+    <h2>Other users</h2>
+    <div class="list-group">
+      <% current_user.other_users.each do |user| %>
+        <%= link_to user.name, user_path(user), class: 'list-group-item list-group-item-action' %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
