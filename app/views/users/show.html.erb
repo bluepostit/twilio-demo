@@ -1,3 +1,18 @@
 <div class="container">
   <h1><%= @user.name %></h1>
+
+  <div class="video-call">
+    <div class="remote-video"></div>
+    <div class="no-call">
+      No call in progress. Click 'Call' to connect!
+    </div>
+    <div class="call-buttons">
+      <%= link_to '#', class: 'call-button btn-start-call' do %>
+        <i class="fas fa-phone"></i> Call
+      <% end %>
+      <%= link_to '#', class: 'call-button btn-end-call' do %>
+        <i class="fas fa-phone-slash"></i> End
+      <% end %>
+    </div>
+  </div>
 </div>

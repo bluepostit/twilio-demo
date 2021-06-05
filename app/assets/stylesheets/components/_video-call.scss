@@ -1,0 +1,45 @@
+.video-call {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.remote-video {
+  display: none;
+}
+
+.no-call {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+
+.call-buttons {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+
+  .call-button {
+    border: 1px solid black;
+    color: black;
+    border-radius: 4px;
+    padding: 4px 8px;
+  }
+
+  .call-button:hover {
+    text-decoration: none;
+
+    box-shadow: 0 0 12px rgba(0,0,0, 0.3);
+  }
+}
+
+.btn-start-call {
+  background-color: $green;
+}
+
+.btn-end-call {
+  background-color: $red;
+}
