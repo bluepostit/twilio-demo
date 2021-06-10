@@ -2,6 +2,8 @@
 
 This demonstrates one-on-one video chat in a Rails app using Twilio.
 
+⚠️ Please note: this is a demo app. It should not be used for production purposes.
+
 ## Install
 
 ```bash
